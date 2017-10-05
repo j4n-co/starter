@@ -1,4 +1,4 @@
-baseurl: /starter
+baseurl: /wmf-2030-strategy-site
 permalink: pretty
 title: Wikimedia Strategy
 markdown: kramdown
@@ -17,8 +17,8 @@ defaults:
       layout: "default"
 prose:
   rooturl: '_pages'
-  siteurl: 'http://j4n-co.github.io/starter/'
-  relativeLinks: 'http://j4n-co.github.io/starter/links.jsonp'
+  siteurl: 'http://j4n-co.github.io/wmf-2030-strategy-site/'
+  relativeLinks: 'http://j4n-co.github.io/wmf-2030-strategy-site/links.jsonp'
   media: 'media'
   metadata:
     _pages:
