@@ -1,0 +1,13 @@
+.header {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/%D0%A0%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%96_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%B8_%D1%83_%D0%BF%D0%B5%D0%BB%D1%96%D0%BA%D0%B0%D0%BD%D1%96%D0%B2.jpg/1024px-%D0%A0%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%96_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%B8_%D1%83_%D0%BF%D0%B5%D0%BB%D1%96%D0%BA%D0%B0%D0%BD%D1%96%D0%B2.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.page--home .header {
+	min-height: 50vh;
+}
+
+.page--home .page {
+	margin-top: 50vh;
+}

@@ -1,6 +1,6 @@
 {% assign rootLength = include.root | size %}
 {% assign rootComponentsLength = include.root | split: '/' | size %}
-{% assign sortedPages = site.posts | sort: 'date' %}
+{% assign sortedPages = site.pages | where: "published", "true" | sort: 'menu_position' %}
 {% assign lastPath = nil %}
 {% assign depth = 0 %}
 {% assign depthAttr = include.depthAttr | default: "data-menu-depth" %}
@@ -63,7 +63,6 @@
     {% endif %}
 
     {% assign depth = nextPathLength | minus: rootComponentsLength %}
-
     <li class="{% if depth == 2%} nav__item {% else %} nav__sub-item {% endif %} {% if page.url == sortedPage.url %}{{ include.activeClass }}{% endif %}">
       {% if sortedPage.content != '' %}
         <a href="{{site.baseurl}}{{ sortedPage.url }}" class="{{ include.linkClass }}">

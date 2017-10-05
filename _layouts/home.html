@@ -11,6 +11,7 @@ title: 'Site Title'
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="{{site.baseurl}}/css/wmui-style-guide.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
 	<title>{% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/\bjs-off\b/,'js-on'); // no BEM notation thx to IE
@@ -26,10 +27,7 @@ title: 'Site Title'
 	<script src="{{site.baseurl}}/js/fonts-loader.js" async></script>
 </head>
 <body class="page--home">
-	<header id="header" class="header" role="banner" style="min-height: 50vh;
-	background-size: cover; background-position: top center;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/%D0%A0%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%96_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%B8_%D1%83_%D0%BF%D0%B5%D0%BB%D1%96%D0%BA%D0%B0%D0%BD%D1%96%D0%B2.jpg/1024px-%D0%A0%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%96_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%B8_%D1%83_%D0%BF%D0%B5%D0%BB%D1%96%D0%BA%D0%B0%D0%BD%D1%96%D0%B2.jpg);
-	 background-repeat: no-repeat;">
+	<header id="header" class="header" role="banner">
 		<div class="content-box">
 			<a href="#content" class="is-aural is-focusable">Jump to content</a>
 			<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
@@ -39,7 +37,7 @@ title: 'Site Title'
 			</label>
 		</div>
 	</header>
-	<div class="page" style="margin-top: 50vh;">
+	<div class="page">
 		<div class="content-box">
 			<div class="col col--start">
 				<input type="checkbox" id="trigger--nav-main" class="trigger--nav-main">
@@ -50,8 +48,8 @@ title: 'Site Title'
 
 			<div class="col col--end">
 				<main id="content" class="content" role="main">
-					{% assign sortedPosts = site.posts | sort: 'date' %}
-					{% for post in sortedPosts %}
+					{% assign sortedPosts = site.pages | sort: 'menu_position' %}
+						{% for post in sortedPosts %}
 						{% for tag in post.tags %}
 							{% if page.tags contains tag %}
 								{% assign slashes = post.url | split: "/" %}
@@ -60,7 +58,7 @@ title: 'Site Title'
 									{% if firstChar == '#' %} {% assign id = slash %} {% endif %}
 								{% endfor %}
 								<section id="{{id |replace_first: '#', ''}}">
-									{{post.content | markdownify}}
+									{{post.content | markdownify }}
 								</section>
 							{% endif %}
 						{% endfor %}

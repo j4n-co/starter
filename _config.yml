@@ -1,11 +1,12 @@
 baseurl: /starter
 permalink: pretty
-markdown: rdiscount
 title: Wikimedia Strategy
+markdown: kramdown
 tags:
 - home
 - about
 - resources
+include: ["_pages"]
 plugins:
   - jekyll-redirect-from
 defaults:
@@ -15,21 +16,12 @@ defaults:
     values:
       layout: "default"
 prose:
-  rooturl: '_posts'
+  rooturl: '_pages'
   siteurl: 'http://j4n-co.github.io/starter/'
   relativeLinks: 'http://j4n-co.github.io/starter/links.jsonp'
   media: 'media'
   metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "default"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
+    _pages:
       - name: "permalink"
         field:
           element: "text"
