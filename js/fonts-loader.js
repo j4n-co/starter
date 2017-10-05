@@ -6,7 +6,7 @@ if ( document.head && 'Promise' in window ) {
 		html.classList.add( 'fonts-loaded' );
 	} else {
 		var script = document.createElement( 'script' );
-		script.src = './js/vendor/fontfaceobserver/fontfaceobserver.standalone.js';
+		script.src = MWF_FONT_PATH;
 
 		script.onload = function () {
 			var sansSerif = new FontFaceObserver( 'Lato' );

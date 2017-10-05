@@ -1,0 +1,22 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/wmui-style-guide.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
+	<title>{% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bjs-off\b/,'js-on'); // no BEM notation thx to IE
+	</script>
+
+	<!--[if lt IE 9]>
+	<script>window.html5={'shivCSS':false};</script>
+	<script src="/js/vendor/ie/html5shiv-3.7.3.min.js"></script>
+	<script src="/js/vendor/ie/respond-1.4.2.min.js"></script>
+	<![endif]-->
+	<script>
+		WMF_FONT_PATH = "{{site.baseurl}}/js/vendor/fontfaceobserver/fontfaceobserver.standalone.js";
+	</script>
+	<link rel="preload" href="{{site.baseurl}}/fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{{site.baseurl}}/fonts/Lato_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="{{site.baseurl}}/js/fonts-loader.js" async></script>
+</head>
