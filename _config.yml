@@ -38,9 +38,16 @@ prose:
           value: ""
       - name: "tags"
         field:
-          element: "text"
-          label: "tag"
-          value: ""
+          element: "select"
+          label: "page sectiom"
+          value: "home"
+          options:
+            - name: "Home"
+              value: "home"
+            - name: "About"
+              value: "about"
+            - name: "Resources"
+              value: "resources"
       - name: "menu_position"
         field:
           element: "number"
