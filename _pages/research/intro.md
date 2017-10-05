@@ -1,11 +1,11 @@
 ---
 published: true
-title: Research
-permalink: /research/
-tags: research
+title: Resources
+permalink: /resources/
+tags: resources
 menu_position: 6
 ---
 
-# Research
+# Resources
 
 Test edit with prose.io
