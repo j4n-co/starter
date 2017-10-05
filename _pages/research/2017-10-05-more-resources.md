@@ -1,6 +1,6 @@
 ---
 menu_position: 7
-published: false
+published: true
 title: More resources
 permalink: '/resources/#more-resources'
 tags: resources
