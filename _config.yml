@@ -24,8 +24,9 @@ prose:
     _pages:
       - name: "published"
         field:
-          element:
+          element: "checkbox"
           label: "published"
+          value: true
       - name: "title"
         field:
           element: "text"
