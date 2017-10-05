@@ -1,7 +1,7 @@
 ---
 ---
 callback([
-{% assign posts = site.posts | reversed | sort: title %}
+{% assign posts = site.pages | reversed | sort: title %}
 {% for post in posts %}
   {
     "text": "{{post.title | replace:'"','\"'}}",
