@@ -22,6 +22,14 @@ prose:
   media: 'media'
   metadata:
     _pages:
+      - name: "published"
+        field:
+          element:
+          label: "published"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "permalink"
         field:
           element: "text"
@@ -32,3 +40,8 @@ prose:
           element: "text"
           label: "tag"
           value: ""
+      - name: "menu_position"
+        field:
+          element: "number"
+          label: "menu position"
+          type: "number"
