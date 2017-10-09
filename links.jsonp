@@ -1,7 +1,7 @@
 ---
 ---
 callback([
-{% assign posts = site.pages | sort: 'menu_position' %}
+{% assign posts = site.pages | sort: 'menu_position' | reversed %}
 {% for post in posts %}
   {
     "text": "{{post.title | replace:'"','\"'}}",
