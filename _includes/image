@@ -1,0 +1,13 @@
+{% capture html %}
+<img src='{{site.baseurl}}/media/{{ include.url }}'
+ class='
+{% if include.rounded %} image--rounded {% endif %}
+{% if include.left %} image--left {% endif %}
+{% if include.right %} image--right {% endif %}
+'
+ alt='{{ include.description }}'
+{% if include.width %} width='{{include.width}}' {% endif %}
+{% if include.height %} height='{{include.height}}' {% endif %}
+ />
+{% endcapture %}
+{{html | strip_newlines}}

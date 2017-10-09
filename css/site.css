@@ -11,3 +11,67 @@
 .page--home .page {
 	margin-top: 50vh;
 }
+
+/**
+* Content element styles
+*/
+
+/* clearfix incase paragraphs have images */
+.content p:before,
+.content p:after {
+	content: ' ';
+	display: table;
+}
+.content p:after {
+	clear: both;
+}
+
+/* text styles */
+.content blockquote {
+	font-size: 2.4rem;
+	color: #54595d;
+	position: relative;
+}
+/* Fancy blockquote */
+.content blockquote:before {
+	content: '“';
+	position: absolute;
+	width: 100%;
+	font-family: 'Georgia', serif;
+	font-size: 12.8rem;
+	line-height: 7.2rem;
+	text-align: center;
+	opacity: 0.3;
+}
+/* Image styles */
+.content figcaption {
+	padding: 1em;
+	background-color: #eaecf0;
+}
+.content .image--rounded {
+	border-radius: 50%;
+}
+.content .image--left {
+	margin: 0.5em;
+	float: left;
+}
+.content .image--right {
+	margin: 0.5em;
+	float: right;
+}
+
+/* component styles */
+.color:hover{
+	text-decoration: none;
+}
+.color__swatch {
+	display: block;
+	background-size: cover;
+	color: #222;
+}
+.color__codes {
+	display: block;
+}
+.color__swatch.color--dark {
+	color: #fff;
+}

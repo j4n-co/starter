@@ -1,0 +1,8 @@
+<a href="{{include.link}}" class="color">
+	<span class="color__swatch {% if include.dark %}color--dark{% endif %}" style="background-image:url('{{site.baseurl}}/media/{{include.background-image}}')">
+		<strong class="color__name">{{include.title}}</strong>
+	</span>
+	<span class="color__codes">
+		{{include.description}}
+	</span>
+</a>

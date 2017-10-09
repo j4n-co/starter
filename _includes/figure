@@ -1,4 +1,4 @@
 <figure>
 	<img src="{{site.baseurl}}/media/{{ include.url }}" alt="{{ include.description }}"/>
-	<caption>{{ include.description }}</caption>
-</table>
+	<figcaption>{{ include.description }}</figcaption>
+</figure>
