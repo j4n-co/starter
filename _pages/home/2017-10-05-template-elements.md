@@ -1,14 +1,14 @@
 ---
 published: true
 title: Template Elements
-permalink: /home/#template-elements
+permalink: '/home/#template-elements'
 tags: home
 menu_position: 2
 ---
 
 # Template Elements
 
-Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit.
+Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. jhv
 
 ## Text Styles
 # Heading 1
@@ -22,7 +22,7 @@ This is a basic paragraph. **Some text is bold**. *Some text is italic*. Here is
 - This is an bulleted list
 - Nothing fancy here
 - You can also have numbered lists
-
+- did this new list item load? did it?
 ### A numbered list
 1. Like this
 2. If your list has just two items, you might not need a list.
