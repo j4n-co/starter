@@ -1,4 +1,4 @@
-<header id="header" class="header" role="banner"f>
+<header id="header" class="header" role="banner">
 	<div class="content-box">
 		<a href="#content" class="is-aural is-focusable">Jump to content</a>
 		<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
@@ -6,5 +6,10 @@
 		<label class="btn--nav-main" for="trigger--nav-main" aria-hidden="true" title="Show main menu">
 			<i></i> <span>Menu</span>
 		</label>
+		{% if page.title == 'home' %}
+		<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+			<source src="{{site.baseurl}}/media/Knowledge_belongs_to_all_of_us_-_2030.wikimedia.org.webm.480p.webm" type="video/webm">
+		</video>
+		{% endif %}
 	</div>
 </header>

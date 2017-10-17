@@ -5,13 +5,36 @@
 	background-repeat: no-repeat;
 }
 .page--home .header {
-	min-height: 50vh;
+	min-height: 75vh;
 }
 
 .page--home .page {
-	margin-top: 50vh;
+	margin-top: 75vh;
 }
 
+/**
+* background video
+*/
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-70%);
+	-moz-transform: translateX(-50%) translateY(-70%);
+	-webkit-transform: translateX(-50%) translateY(-70%);
+	transform: translateX(-50%) translateY(-70%);
+}
+
+.footer {
+	position: relative;
+	background-color: #eaecf0;
+	z-index: 111;
+}
 /**
 * Content element styles
 */
